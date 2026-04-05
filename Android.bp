@@ -28939,7 +28939,7 @@ filegroup {
         "proprietary/vendor/etc/qcril_database/upgrade/config/0013.0_config.sql",
         "proprietary/vendor/etc/qcril_database/upgrade/config/0014.0_config.sql",
         "proprietary/vendor/etc/qcril_database/upgrade/config/0015.0_config.sql",
-        "proprietary/vendor/etc/qcril_database/upgrade/config/sony_15.0_config.sql",
+        "proprietary/vendor/etc/qcril_database/upgrade/config/0015.0_sony_config.sql",
     ],
 }
 
