@@ -582,6 +582,7 @@ PRODUCT_PACKAGES += \
     libWlanServiceJni \
     libXtcApi \
     lib_bix_idd \
+    lib_bt_bundle \
     libadaptlaunch \
     libadm \
     libadreno_app_profiles \
