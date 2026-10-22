@@ -582,6 +582,8 @@ PRODUCT_PACKAGES += \
     libWlanServiceJni \
     libXtcApi \
     lib_bix_idd \
+    lib_bt_aptx \
+    lib_bt_ble \
     lib_bt_bundle \
     libadaptlaunch \
     libadm \
