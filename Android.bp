@@ -24750,6 +24750,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.semc.hardware.aidldisplay-somc.xml",
+    owner: "sony",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.semc.hardware.aidldisplay-somc.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.semc.hardware.extlight-somc.xml",
     owner: "sony",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.semc.hardware.extlight-somc.xml",
@@ -26256,6 +26265,39 @@ cc_prebuilt_binary {
                 "libqti-utils",
                 "libhidlmemory",
                 "vendor.qti.spu@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.semc.hardware.aidldisplay-service.somc",
+    owner: "sony",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.semc.hardware.aidldisplay-service.somc",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libmiscta",
+                "libhwbinder",
+                "libbinder_ndk",
+                "vendor.semc.hardware.aidldisplay-V1-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",

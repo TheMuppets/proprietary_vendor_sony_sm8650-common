@@ -242,6 +242,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8650-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/sony/sm8650-common/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
     vendor/sony/sm8650-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/sony/sm8650-common/proprietary/vendor/etc/init/vendor.semc.hardware.aidldisplay-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.aidldisplay-somc.rc \
     vendor/sony/sm8650-common/proprietary/vendor/etc/init/vendor.semc.hardware.aidlsecd-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.aidlsecd-service.rc \
     vendor/sony/sm8650-common/proprietary/vendor/etc/init/vendor.semc.hardware.extlight-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.extlight-somc.rc \
     vendor/sony/sm8650-common/proprietary/vendor/etc/init/vendor.semc.hardware.spc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.spc-service.rc \
@@ -1401,6 +1402,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
+    vendor.semc.hardware.aidldisplay-somc.xml \
     vendor.semc.hardware.extlight-somc.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
     adpl \
@@ -1447,6 +1449,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.spu@1.1-service \
     vendor.qti.spu@2.0-service \
+    vendor.semc.hardware.aidldisplay-service.somc \
     vendor.semc.hardware.aidlsecd-service \
     vendor.semc.hardware.extlight-service.somc \
     vendor.semc.hardware.spc-service \
